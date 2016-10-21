@@ -65,7 +65,7 @@
             $('#btnkeysearch').click(function () {
                 $('#result-container').html("");
                 //$("td:contains('" + $('#txtkeyword').val() + "'):not(:has(*))").css("background-color", "yellow");
-                $("dd tr:contains('" + $('#txtkeyword').val() + "')").addClass("custom-search-text");
+                $("div:contains('" + $('#txtkeyword').val() + "')").addClass("custom-search-text");
                 $('#lbloccur').html("No Of Occurances : " + $('#fetch-container .custom-search-text').length);
                 $('.custom-search-text').each(function () {
                     $('#result-container').append("<br/><br/>" + $(this).html() + "<br/><br/> \n");
